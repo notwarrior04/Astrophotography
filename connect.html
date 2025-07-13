@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Connect With Me | NotWarrior's Astrophotography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Orbitron&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="connect-page">
+    <nav>
+        <ul class="topnav" id="dropdownClick1">
+            <li><a href="index.html">Home</a></li>
+            <li class="topnav-right1"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="top-container">
+        <h1 class="brand1">
+            <span class="glint-text">Connect With Me</span>
+        </h1>
+    </div>
+
+    <div class="write1">
+        <div class="ConnectMe">
+            <h1 class="me-header">Let’s Talk ✨</h1>
+            <p class="me-text">
+                Want to collaborate, share your astrophotography, or just talk about telescopes and stars? <br>
+                I'm always happy to connect with fellow stargazers.
+            </p>
+            <p class="me-text1">
+                📷 <strong>Instagram:</strong> <a href="https://instagram.com/notwarriorr" target="_blank" style="color: #ffd700; text-decoration: underline;">@notwarriorr</a> <br>
+                🐦 <strong>Twitter:</strong> <a href="https://twitter.com/Warrior_Ooops" target="_blank" style="color: #ffd700; text-decoration: underline;">@Warrior_Ooops</a> <br>
+                📧 <strong>Email:</strong> notwarriorsastrophotography@gmail.com
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const faders = document.querySelectorAll('.ConnectMe');
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Phases of the Moon | NotWarrior's Astrophotography</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="topnav-right"><a href="connect.html">Connect With Me</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#x2630;</a></li>
+            </ul>
+        </nav>
+        <div class="top-container">
+            <h1 class="brand1">
+                <span class="glint-text">Phases of the Moon</span>
+            </h1>
+        </div>
+
+    <div class="write2">
+    <div class="Gallery">
+        <h1 class="moon1">Crescent Moon 🌒</h1>
+        <div class="surface-img">
+        <div class="img-container">
+            <img src="Images/Crescent Moon 2.jpg" alt="Crescent 1" class="quarter1">
+            <h2 class="quarter">Waxing Crescent</h2>
+            <h3 class="date">12th July 2024</h3>
+        </div>
+        <div class="img-container">
+            <img src="Images/Crescent Moon 1.jpg" alt="Crescent 2" class="quarter2">
+            <h2 class="quarter">Waning Crescent</h2>
+            <h3 class="date">2nd July 2024</h3>
+        </div>
+        </div>
+    </div>
+
+    <div class="Gallery">
+        <h1 class="moon1">Half-Moon 🌓</h1>
+        <div class="surface-img">
+        <div class="img-container">
+            <img src="Images/First Quarter.jpg" alt="First Quarter" class="quarter1">
+            <h2 class="quarter">First Quarter</h2>
+            <h3 class="date">20th December 2023</h3>
+        </div>
+        <div class="img-container">
+            <img src="Images/Last Quarter.jpg" alt="Last Quarter" class="quarter2">
+            <h2 class="quarter">Last Quarter</h2>
+            <h3 class="date">4th January 2024</h3>
+        </div>
+        </div>
+    </div>
+
+    <div class="Gallery">
+        <h1 class="moon1">Gibbous Moon 🌔</h1>
+        <div class="surface-img">
+        <div class="img-container">
+            <img src="Images/Gibbous Moon 2.jpg" alt="Gibbous Moon" class="quarter1">
+            <h2 class="quarter">Waxing Gibbous</h2>
+            <h3 class="date">2nd July 2024</h3>
+        </div>
+        <div class="img-container">
+            <img src="Images/Gibbous Moon 1.jpg" alt="Gibbous Moon" class="quarter2">
+            <h2 class="quarter">Waning Gibbous</h2>
+            <h3 class="date">2nd July 2024</h3>
+        </div>
+        </div>
+    </div>
+
+    <div class="Gallery">
+        <h1 class="moon1">Full Moon 🌕</h1>
+        <div class="surface-img">
+        <div class="img-container1">
+            <img src="Images/Full Moon.jpg" alt="Gibbous Moon" class="full1">
+        <h2 class="quarter">Every full moon of a year has a different name depending on its month.</h2>
+        <h3 class="date">2nd July 2024</h3>
+        </div>
+    </div>
+    </div>
+    <div class="gallery-button-container-2"><a href="gallery.html" class="gallery-button-1">🚀 Back to Gallery</a></div>
+    </div>
+
+    <script>
+        function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if( x.className == "topnav") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "topnav";
+                }
+            }
+        const faders = document.querySelectorAll('.Gallery');
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+</body>
+</html>

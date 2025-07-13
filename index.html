@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Home | NotWarrior's Astrophotography</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="topnav-right"><a href="connect.html">Connect With Me</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#x2630;</a></li>
+            </ul>
+        </nav>
+        <div class="top-container">
+            <h1 class="brand1">
+                <span class="glint-text">NotWarrior's Astrophotography</span>
+            </h1>
+        </div>
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if( x.className == "topnav") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        <div class="write">
+            <div class="Me">
+                <h1 class="me-header">About Me</h1>
+                <p class="me-text">
+Myself, Subhoprasad Bhattacharyya — a star-gazer from Kolkata, India. And maybe, an aspiring astrophotgrapher?
+I’m a Computer Science undergrad at UEM Kolkata at the University of Engineering & Management, Kolkata.
+I also serve as the Vice-President of the UEMK Space Observatory – Centre of Excellence, where we bring together students who share a common dream: to explore the cosmos, not just through equations, but through wonder.
+Astrophotography is not just something I love — it’s something I need. A stillness I crave, night after night.
+Each time I point my telescope toward the sky, I am reminded of how small we are — and how infinite the universe is.
+This website is a collection of those moments.
+                </p>
+                <p class="me-text1">Captured in darkness. Framed in stillness. And shared in light.</p>
+            </div>
+            <div class="Why">
+                <h1 class="why-header">Why Astrophotography?</h1>
+                <p class="why-text">
+The night sky has always felt like home — vast, silent, and full of stories waiting to be told.
+While others chase city lights, I chase starlight.
+Through the stillness of the cosmos, I find clarity in chaos.
+My journey into astrophotography began not with ambition, but with wonder. A quiet urge to look up… and never look away.
+With my Celestron Astromaster 130 EQ telescope and Sony Alpha ILCE 6400 camera, I try to frame what can’t be explained — the infinite painted across a black canvas. Each image I capture isn’t just light collected over seconds — it’s time, silence, and soul layered into pixels.
+Astrophotography, to me, is not just about stars or gear — it’s about patience, perspective, and peace. It’s the art of waiting for the universe to reveal itself, one moment at a time.
+This isn’t a hobby.
+This is my obsession.
+Not just something I love — but something I need to survive.
+                </p>
+            </div>
+            <div class="Equipment">
+                <h1 class="equi-header">My Astrophotography Setup 🔭</h1>
+                <p class="equi-text">
+I do all my astrophotography under Bortle Class 8 skies, 
+where city lights drown most of the stars — but not my fascination with them. 
+Despite the challenges, I’ve built a beginner-friendly setup 
+that helps me explore planets, nebulae, and galaxies with whatever clear skies I get. 
+Here's what I currently use:
+                </p>
+                <ul class="equi-list">
+                <li><span style="color: #fffacd; text-shadow: 0 0 5px #ffd700, 0 0 10px #000000;">Telescope:</span> Celestron Astromaster 130EQ – Newtonian Reflector Telescope</li>
+                <li><span style="color: #fffacd; text-shadow: 0 0 5px #ffd700, 0 0 10px #000000;">Eyepieces:</span></li>
+                <ul class="eyepiece">
+                    <li>4mm & 6mm for planetary imaging and close-up observation</li>
+                    <li>15mm & 20mm for wider views of the Moon and deep-sky objects like Andromeda Galaxy and Orion Nebula</li>
+                </ul>
+                <li><span style="color: #fffacd; text-shadow: 0 0 5px #ffd700, 0 0 10px #000000;">Camera:</span> Sony Alpha ILCE 6400 Mirrorless Camera</li>
+                <li><span style="color: #fffacd; text-shadow: 0 0 5px #ffd700, 0 0 10px #000000;">Mount:</span> Manual EQ Mount (no RA drive)</li>
+                <li><span style="color: #fffacd; text-shadow: 0 0 5px #ffd700, 0 0 10px #000000;">Processing Software:</span> PIPP, AutoStakkert, RegiStax 6, DeepSkyStacker, Siril, Lightroom, Photoshop, Snapseed</li>
+                <li><span style="color: #fffacd; text-shadow: 0 0 5px #ffd700, 0 0 10px #000000;">Filters:</span> None (currently)</li>
+                <li><span style="color: #fffacd; text-shadow: 0 0 5px #ffd700, 0 0 10px #000000;">Other:</span> 16-50mm Lens, SkyTonight App</li>
+                </ul>
+            </div>
+            <div class="gallery-button-container">
+            <a href="gallery.html" class="gallery-button">🚀 Explore the Gallery</a>
+            </div>
+            </div>
+            <script>
+                const faders = document.querySelectorAll('.Me, .Why, .Equipment');
+                const appearOptions = {
+                    threshold: 0.1,
+                    rootMargin: "0px 0px -100px 0px"};
+                    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+                        entries.forEach(entry => {
+                            if (!entry.isIntersecting) return;
+                            entry.target.classList.add("visible");
+                            observer.unobserve(entry.target);
+                        });
+                    }, appearOptions);
+
+                    faders.forEach(fader => {
+                    appearOnScroll.observe(fader);
+                    });
+            </script>
+    </body>
+</html>

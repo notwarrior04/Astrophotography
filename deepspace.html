@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Deep Space Imaging | NotWarrior's Astrophotography</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="topnav-right"><a href="connect.html">Connect With Me</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#x2630;</a></li>
+            </ul>
+        </nav>
+        <div class="top-container">
+            <h1 class="brand1">
+                <span class="glint-text">Deep Space Imaging</span>
+            </h1>
+        </div>
+
+    <div class="write2">
+    <div class="Gallery4">
+        <h1 class="planets-1">Orion Nebula</h1>
+        <div class="planet-cont">
+        <div class="orion-img">
+            <div class="img-container-orion">
+            <img src="Images/Orion Nebula.jpg" alt="Orion" class="planet1">
+            <h2 class="quarter">The Heart of Orion Nebula (M42)</h2>
+            <h3 class="date">24th December 2024</h3>
+            </div>
+        </div>
+        <div class="img-container4">
+            <div class="jupiter-txt">
+                <p class="jupiter-txt1">
+                The Great Orion Nebula (M42) is one of the brightest and most iconic star-forming regions in the night sky,
+                located about 1,350 light-years away in the Orion constellation.
+                It’s a vast cloud of gas and dust where new stars are actively being born,
+                making it a favorite target for both astronomers and astrophotographers.
+                </p>
+                <p class="jupiter-txt1">
+                This image is the result of stacking 955 frames, each with a 2-second exposure,
+                captured over two consecutive nights. Through careful stacking and processing,
+                I was able to reveal the core of the Orion Nebula — often called its "heart"
+                — where intense ultraviolet radiation from young, massive stars illuminates the surrounding gas,
+                creating the nebula’s stunning glow.
+                </p>
+                <p class="jupiter-txt1">
+                Capturing the heart of a stellar nursery like this is both a technical and emotional experience
+                — a glimpse into the universe's ongoing process of creation.
+                </p>
+            </div>
+        </div>
+        </div>
+        </div>
+    <div class="gallery-button-container-1"><a href="gallery.html" class="gallery-button-1">🚀 Back to Gallery</a></div>
+    </div>
+
+    <script>
+        function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if( x.className == "topnav") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "topnav";
+                }
+            }
+        const faders = document.querySelectorAll('.Gallery4');
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+</body>
+</html>
