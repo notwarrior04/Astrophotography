@@ -368,7 +368,7 @@ h1.brand2 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #e0e0e0;
-    height: 350vh; 
+    height: auto; 
     padding: 50px;
 }
 
@@ -379,7 +379,7 @@ h1.brand2 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #e0e0e0;
-    height: 100vh; 
+    height: auto; 
     padding: 50px;
 }
 
@@ -589,7 +589,7 @@ h1.brand2 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #e0e0e0;
-    height: 50vh; 
+    height: auto; 
     padding: 50px;
 }
 
