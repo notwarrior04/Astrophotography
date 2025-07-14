@@ -1702,7 +1702,7 @@ h1.brand2 {
 
     .me-text2 {
         max-width: 700px;
-        font-size: 0.75rem;
+        font-size: 0.70rem;
         padding: 0 30px; 
         padding-bottom: 0px;
         box-sizing: border-box;
@@ -1760,9 +1760,9 @@ h1.brand2 {
 
     .ConnectMe {
       margin: 0;
-      padding: 0px;
       padding-right: 0px;
       padding-left: 0px;
+      padding-bottom: 10px;
     }
 
     .me-text2 {
