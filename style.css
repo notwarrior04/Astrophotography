@@ -1758,6 +1758,19 @@ h1.brand2 {
         max-width: 110%;
     }
 
+    .ConnectMe {
+      margin: 0;
+      padding: 0px;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    .me-text2 {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
     .lightbox {
   position: fixed;
   top: 0;
