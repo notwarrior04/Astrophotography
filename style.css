@@ -9,7 +9,7 @@ h1.brand1 {
     font-size: 50px;
     margin: 0;
     line-height: 70px;
-    padding-bottom: 17px;
+    padding-bottom: 18px;
     position: relative;
     z-index: 2;
 }
@@ -80,7 +80,7 @@ ul.topnav li a {
     text-decoration: none;
     min-height: 16px;
     text-align: center;
-    padding: 17px;
+    padding: 18px;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -168,6 +168,16 @@ h1.brand2 {
 }
 
 .me-text1 {
+    max-width: 800px;
+    margin-top: 20px;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-shadow: 0 0 4px #000;
+    font-family: 'Space Mono', serif;
+}
+
+.me-text2 {
     max-width: 800px;
     margin-top: 20px;
     color: #e0e0e0;
@@ -589,7 +599,7 @@ h1.brand2 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #e0e0e0;
-    height: auto; 
+    height: 83vh; 
     padding: 50px;
 }
 
@@ -863,7 +873,7 @@ h1.brand2 {
     margin: 40px auto 125px auto;
     margin-bottom: 120px;
     max-width: 1300px;
-    max-height: 910px;
+    max-height: auto;
     box-shadow: 0 0 10px #ffd700, 0 0 20px #ffeb3b2e, 0 0 30px #fffacd2e;
     transition: all 0.3s ease-in-out;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1194,7 +1204,33 @@ h1.brand2 {
     line-height: 35px;
 }
 
+.gallery-button-container-1 {
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 @media screen and (max-width: 680px) {
+    h1.brand1 {
+    font-size: 28px; /* Adjust font size for mobile */
+    line-height: 34px;
+  }
+
+  .top-container {
+    padding: 30px; /* Reduce padding on small screens */
+  }
+
+  .write {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 8px;
+  }
+
     .Gallery3 {
         height: auto;
     }
@@ -1227,6 +1263,16 @@ h1.brand2 {
         max-height: 2500px;
         padding: 10px;
         padding-bottom: 0px;
+        padding-top: 0;
+        margin-top: 8px;
+    }
+
+    .Gallery4 {
+        max-height: 2500px;
+        padding: 10px;
+        padding-bottom: 0px;
+        padding-top: 0;
+        margin-top: 8px;
     }
 
     .planet-cont {
@@ -1348,3 +1394,147 @@ h1.brand2 {
         gap: 10px;
     }
 }
+
+.gallery-button-container-4 {
+        align-items: center;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
+
+@media screen and (max-width: 680px) {
+    h1.brand1 {
+        font-size: 25px;
+        line-height: 40px;
+        padding-bottom: 7px;
+    }
+
+    h2.brand2 {
+        font-size: 20px;
+        line-height: 40px;
+        padding-bottom: 7px;
+    }
+
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.responsive {
+        position: relative;
+    }
+
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    ul.topnav-right1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .me {
+        padding-bottom: 0px;
+    }
+
+    .why {
+        padding-bottom: 100px;
+    }
+
+    .me-header {
+        font-size: 20px;
+    }
+
+    .me-text,
+    .me-text1,
+    .why-text,
+    .equi-text,
+    .equi-list,
+    .eyepiece {
+        max-width: 700px;
+        font-size: 0.85rem;
+        padding: 0 30px; 
+        padding-bottom: 0px;
+        box-sizing: border-box;
+    }
+
+    .me-text2 {
+        max-width: 700px;
+        font-size: 0.75rem;
+        padding: 0 30px; 
+        padding-bottom: 0px;
+        box-sizing: border-box;
+    }
+
+
+    .why-header {
+        font-size: 20px;
+    }
+
+    .Me,
+    .Why {
+        padding: 7px;
+        padding-bottom: 15px;
+        max-width: 600px;
+        margin: 10px;
+        margin-bottom: 70px;
+    }
+
+    .Equipment {
+        padding: 7px;
+        padding-bottom: 8px;
+        max-width: 600px;
+        margin: 10px;
+        margin-bottom: 0px;
+    }
+
+    .gallery-button-container {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .equi-header {
+        font-size: 20px;
+    }
+
+    .top-container {
+        width: auto;
+    }
+
+    .write {
+        max-width: auto;
+    }
+
+    .gallery-button-container-4 {
+        align-items: center;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 0px;
+    }
+}
+
+body {
+    background-image: url('Meghalaya Night Sky.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
