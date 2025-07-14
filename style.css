@@ -1528,6 +1528,10 @@ h1.brand2 {
         margin-top: 60px;
         margin-bottom: 0px;
     }
+
+    .img-container-orion img {
+        max-width: 110%;
+    }
 }
 
 body {
