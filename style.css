@@ -1297,6 +1297,10 @@ h1.brand2 {
         margin: 10px;
         margin-bottom: 80px;
         max-height: 1000px;
+        padding-top: 3px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 7px;
     }
 
     .Gallery3 {
