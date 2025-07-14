@@ -1063,6 +1063,46 @@ h1.brand2 {
   margin-bottom: 0px;
 }
 
+.img-container6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.img-container6 img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.img-container6 a {
+  width: 120%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  align-items: center;
+  text-align: center;
+}
+
+.img-container6 img:hover {
+  transform: scale(1.05);
+}
+
+.img-container6 h2.quarter {
+  color: #fffacd;
+  font-family: "Space Mono", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.img-container6 h3.date {
+    color: #ffffff;
+    font-family: "Space Mono", sans-serif;
+    font-size: 1.0rem;
+    margin-bottom: 30px;
+}
+
 .img-container5 h3.date {
     color: #ffffff;
     font-family: "Space Mono", sans-serif;
@@ -1393,6 +1433,13 @@ h1.brand2 {
     .jupiter-img {
         gap: 10px;
     }
+
+    .img-container6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200%;
+    }
 }
 
 .gallery-button-container-4 {
@@ -1401,6 +1448,180 @@ h1.brand2 {
         margin-top: 100px;
         margin-bottom: 0px;
     }
+
+    .lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.lightbox:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.gallery-full {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 15px;
+  animation: zoomIn 0.4s ease-in-out;
+}
+
+.moon-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.moon-lightbox:target {
+  display: flex;
+}
+
+.moon-lightbox img {
+  max-width: 95%;
+  max-height: 90%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.moon-lightbox img:hover {
+  transform: scale(1.03);
+  cursor: zoom-out;
+}
+
+.moon-lightbox1 {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.moon-lightbox1:target {
+  display: flex;
+}
+
+.moon-lightbox1 img {
+  width: 40%;
+  height: 60%;
+  max-width: 95%;
+  max-height: 90%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.moon-lightbox1 img:hover {
+  transform: scale(1.03);
+  cursor: zoom-out;
+}
+
+.moon-lightbox2 {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.moon-lightbox2:target {
+  display: flex;
+}
+
+.moon-lightbox2 img {
+  width: 48%;
+  height: 50%;
+  max-width: 95%;
+  max-height: 90%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.moon-lightbox2 img:hover {
+  transform: scale(1.03);
+  cursor: zoom-out;
+}
+
+.moon-lightbox3 {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.moon-lightbox3:target {
+  display: flex;
+}
+
+.moon-lightbox3 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.moon-lightbox3 img:hover {
+  transform: scale(1.03);
+  cursor: zoom-out;
+}
+
+.close-btn {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  font-size: 32px;
+  color: #fffacd;
+  text-shadow: 0 0 10px #ffd700;
+  cursor: pointer;
+  z-index: 1001;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+.close-btn:hover {
+  color: #ffffff;
+  text-shadow: 0 0 15px #ffffff, 0 0 25px #ffd700;
+}
 
 @media screen and (max-width: 680px) {
     h1.brand1 {
@@ -1532,6 +1753,188 @@ h1.brand2 {
     .img-container-orion img {
         max-width: 110%;
     }
+
+    .lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 500;
+  box-sizing: border-box;
+}
+
+.lightbox:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.gallery-full {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #fffacd, 0 0 30px #ffd70088;
+  object-fit: contain;
+  animation: zoomIn 0.3s ease-in-out;
+}
+
+.gallery-full.enlarged {
+  max-width: 95vw;
+  max-height: 95vh;
+  transform: scale(10);
+}
+
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+    .moon-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.moon-lightbox:target {
+  display: flex;
+}
+
+.moon-lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 12px;
+  object-fit: contain;
+  animation: transform 0.3s ease-in-out;
+}
+
+    .moon-lightbox1 {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.moon-lightbox1:target {
+  display: flex;
+}
+
+.moon-lightbox1 img {
+  width: 80%;
+  height: 30%;
+  max-height: 85vh;
+  border-radius: 12px;
+  object-fit: contain;
+  animation: transform 0.3s ease-in-out;
+}
+
+.moon-lightbox3:target {
+  display: flex;
+}
+
+.moon-lightbox3:target a {
+    align-items: center;
+  text-align: center;
+}
+
+.moon-lightbox3 {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.moon-lightbox2 {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.moon-lightbox2:target {
+  display: flex;
+}
+
+.moon-lightbox2 img {
+  width: 100%;
+  height: 100%;
+  max-height: 85vh;
+  border-radius: 12px;
+  object-fit: contain;
+  animation: transform 0.3s ease-in-out;
+  align-items: center;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  font-size: 32px;
+  color: #fffacd;
+  text-shadow: 0 0 10px #ffd700;
+  cursor: pointer;
+  z-index: 1001;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+.moon-lightbox3 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
 }
 
 body {
@@ -1542,3 +1945,13 @@ body {
     background-attachment: fixed;
 }
 
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
