@@ -1952,6 +1952,30 @@ h1.brand2 {
     justify-content: center;
 }
 
+    .write1 {
+  padding: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.write2 {
+  padding: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.write3 {
+  padding: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.write {
+  padding: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 }
 
 body {
